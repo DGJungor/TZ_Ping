@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(249, 250, 253, 1);
+    font-family: "微软雅黑";
+}
+.nav-bread {
+    height: 43px;
+    background-color: #fff;
+}
+.content {
+    width: 1200px;
+    margin: 10px auto;
+}
+.nav-bread ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-bread ul li {
+    height: 100%;
+    padding: 0 10px;
+    line-height: 43px;
+
+
+}
+.nav-bread ul li a {
+    color:#00A0E9;
+    font-size: 14px;
+}
+.inputIp {
+    height: 108px;
+    background: url(../images/ping_barTop.png) no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: 1px solid transparent;
+    margin: 2px 0;
+    box-sizing: border-box;
+    padding-top: 38px;
+}
+.inputIp h2 {
+    text-align: center;
+}
+.inputIp .input-group {
+    text-align: center;
+}
+.inputIp input {
+    width: 489px;
+    height: 37px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    -webkit-transform: translateX(10px);
+       -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+         -o-transform: translateX(10px);
+            transform: translateX(10px);
+    outline: none;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 3px;
+}
+.inputIp button {
+    width: 111px;
+    height: 37px;
+    line-height: 29px;
+    background-color: rgba(49, 116, 246, 1);
+    border-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 3px;
+
+}
+.inputIp p {
+    text-align: center;
+    font-size: 12px;
+    color: #B98F58;
+    position: relative;
+}
+.inputIp p::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 32.5%;
+    top: -2px;
+    background: url(../images/u390.png) no-repeat;
+    background-size: cover;
+
+}
+.result {
+    height: 546px;
+    background-color: #fff;
+    margin: 20px 0;
+    border: 1px solid transparent;
+}
+.result.hidden {
+    display: none;
+}
+.result.show {
+    display: block;
+}
+.result .result-map {
+    width: 600px;
+    height: 546px;
+    float: left;
+}
+.reslut-text {
+    float: right;
+    width: 500px;
+    margin-left: 49px;
+    margin-right: 49px;
+    box-sizing: border-box;
+
+}
+.reslut-text .result-total {
+     overflow: hidden;
+}
+.reslut-text .result-total h3 {
+    /* border-bottom: 1px solid #eee; */
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.reslut-text .result-total ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.reslut-text .result-total ul li {
+    float: left;
+    width: 50%;
+    height: 93px;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #eee; */
+    padding-left: 76px;
+    position: relative;
+
+}
+.reslut-text .result-total ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    width: 48px;
+    height: 48px;
+}
+.reslut-text .result-total ul li:nth-of-type(1)::before {
+    background: url(../images/u35.png) no-repeat;
+}
+.reslut-text .result-total ul li:nth-of-type(2)::before {
+    background: url(../images/u39.png) no-repeat;
+}
+.reslut-text .result-total ul li:nth-of-type(3)::before {
+    background: url(../images/u31.png) no-repeat;
+}
+.reslut-text .result-total ul li:nth-of-type(4)::before {
+    background: url(../images/u43.png) no-repeat;
+}
+.reslut-text .result-total ul li p {
+    margin: 0;
+}
+.reslut-text .result-total ul li p.response-time {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 14px;
+
+}
+.reslut-text .result-total ul li p.response-time.green {
+    color: #56C98F;
+}
+.reslut-text .result-total ul li p.response-time.red {
+    color: #DA5858;
+}
+.reslut-text .result-total ul li p.result-tip {
+    font-size: 14px;
+    color: #999999;
+}
+.reslut-text .result-total ul li p.result-tip a {
+    color: #3174f6;
+}
+.reslut-text .result-ping-value h3 {
+    /* border-bottom: 1px solid #eee; */
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 46px;
+}
+.reslut-text .result-ping-value table {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    
+}
+.reslut-text .result-ping-value table td {
+    padding: 5px 0;
+    /* border-bottom: 1px solid #eee; */
+    color: #999;
+
+}
+.points {
+    background-color: #fff;
+    border: 1px solid transparent;
+    margin: 2px 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.points h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+.btn-group {
+    margin-bottom: 14px;
+}
+.btn-group.hidden {
+    display: none;
+}
+.btn-group.show {
+    display: block;
+}
+.btn-group span {
+    display: inline-block;
+    width: 126px;
+    height: 32px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #444443;
+}
+.points table {
+    width: 100%;
+    border-spacing: 0;
+
+}
+.points table thead th {
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3174f6;
+    color: #fff;
+}
+.points table tbody td {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #373737;
+
+}
+.points table tbody td span {
+    color: #48ba33;
+}
+.points table tbody tr:nth-of-type(even) td {
+    background-color: #eaf2f4;
+}
+.points table td {
+    text-align: center;
+}
+.btn-group span.active {
+    color: #fff;
+    background-color: rgba(49, 116, 246, 1);
+}
+.loading {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.loading.hidden {
+    display: none;
+}
+.loading.show {
+    display: block;
+}
+a {
+    text-decoration: none;
+}

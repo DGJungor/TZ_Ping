@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ping检测工具</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="content">
+        <!-- <div class="nav-bread">
+            <ul>
+                <li><a href="http://www.idckx.com/">返回首页</a></li>
+            </ul>
+        </div> -->
+        <div class="inputIp">
+            <!-- <h2>Ping检测工具</h2> -->
+            <div class="input-group">
+                <input type="text" placeholder="输入网址">
+                <button>ping检测</button>
+            </div>
+            <!-- <p>输入IP只能Ping检测，如果服务器网络不通或禁PING，则全部超时。</p> -->
+        </div>
+        <div class="result hidden">
+            <div class="result-map" id="baiduMap">
+
+            </div>
+            <div class="reslut-text">
+                <div class="result-total">
+                    <h3>检测结果</h3>
+                    <ul>
+                        <li>
+                            <p class="response-time green">
+                                0ms
+                            </p>
+                            <p class="result-tip">
+                                <!-- 最快 <a href="#">湖北随州[电信]</a> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="response-time red">
+                                0ms
+                            </p>
+                            <p class="result-tip">
+                                <!-- 最慢 <a href="#">湖北随州[电信]</a> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="response-time">
+                                0
+                            </p>
+                            <p class="result-tip">
+                                连接点数量
+                            </p>
+                        </li>
+                        <li>
+                            <p class="response-time">
+                                0ms
+                            </p>
+                            <p class="result-tip">
+                                平均
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="result-ping-value">
+                    <h3>各地区Ping值</h3>
+                    <table>
+                        <tbody>
+                            <!-- <tr>
+                                <td>湖南：<sapn style="color: #56C98F;">9ms</sapn></td>
+                                <td>湖南： <sapn style="color: #56C98F;">9ms</sapn></td>
+                                <td>湖南： <sapn style="color: #56C98F;">9ms</sapn></td>
+                                <td>湖南：<sapn style="color: #56C98F;">9ms</sapn></td>
+                            </tr>
+                            <tr>
+                                <td>湖南：<sapn style="color: #56C98F;">9ms</sapn></td>
+                                <td>湖南：<sapn style="color: #56C98F;">9ms</sapn></td>
+                                <td>湖南：<sapn style="color: #56C98F;">9ms</sapn></td>
+                                <td>湖南：<sapn style="color: #DA5858;">9ms</sapn></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="points">
+            <h2>检测点列表</h2>
+            <div class="btn-group hidden">
+                <span class="active" data-operator="all">全部显示</span>
+                <span data-operator="电信">电信</span>
+                <span data-operator="联通">联通</span>
+                <span data-operator="移动">移动</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>监测点</th>
+                        <th>响应IP</th>
+                        <th>IP归属地</th>
+                        <th>响应时间</th>
+                        <th>提供商</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>福建福州[电信]</td>
+                        <td><span>175.6.244.1</span></td>
+                        <td>湖南省长沙市 电信</td>
+                        <td>24ms</td>
+                        <td>腾正科技</td>
+                    </tr>
+                    <tr>
+                        <td>福建福州[电信]</td>
+                        <td><span>175.6.244.1</span></td>
+                        <td>湖南省长沙市 电信</td>
+                        <td>24ms</td>
+                        <td>腾正科技</td>
+                    </tr>
+                    <tr>
+                        <td>福建福州[电信]</td>
+                        <td><span>175.6.244.1</span></td>
+                        <td>湖南省长沙市 电信</td>
+                        <td>24ms</td>
+                        <td>腾正科技</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="loading hidden">
+                加载中...
+            </div>
+        </div>
+    </div>
+    <script src="js/babel.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/build/dist/echarts-all.js"></script>
+    <script src="node_modules/babel-polyfill/browser.js"></script>
+    <script type="text/babel" data-presets="es2015,stage-2" src="js/count.js"></script>
+    <script type="text/babel" data-presets="es2015,stage-2" src="js/renderCount.js"></script>
+    <script type="text/babel" data-presets="es2015,stage-2" src="js/index.js"></script>
+</body>
+</html>
